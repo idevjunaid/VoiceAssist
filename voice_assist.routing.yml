@@ -1,0 +1,15 @@
+voice_assist.ai_proxy:
+  path: '/voice-assist/ai'
+  defaults:
+    _controller: '\Drupal\voice_assist\Controller\AiProxyController::process'
+    _title: 'AI Proxy'
+  requirements:
+    _permission: 'access content'
+
+voice_assist.voice:
+  path: '/voice-assist/voice'
+  defaults:
+    _controller: '\Drupal\voice_assist\Controller\TTSController::speak'
+    _title: 'TTS Voice'
+  requirements:
+    _permission: 'access content'

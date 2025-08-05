@@ -1,0 +1,7 @@
+name: Voice Assist
+type: module
+description: Voice-assisted content creation with AI & TTS.
+core_version_requirement: ^10.2 || ^11
+package: AI
+dependencies:
+  - ai

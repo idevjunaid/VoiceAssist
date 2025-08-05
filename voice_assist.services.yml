@@ -1,0 +1,6 @@
+services:
+  voice_assist.ai_requester:
+    class: Drupal\voice_assist\Service\AiRequester
+    arguments:
+      - '@ai.provider'
+      - '@config.factory'

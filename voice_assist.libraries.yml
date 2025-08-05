@@ -1,0 +1,9 @@
+voice_assist:
+  version: 1.x
+  js:
+    js/voice-assist.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings
+    - core/once
