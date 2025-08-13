@@ -83,8 +83,3 @@ drupal_ai_voice_node_creator/
 Developed by [@idevjunaid](https://github.com/idevjunaid)  
 Built with ❤️ for the Drupal dev community.
 
----
-
-## 📜 License
-
-MIT License – free to use, modify, and distribute.
