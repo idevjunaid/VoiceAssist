@@ -2,9 +2,16 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 
-function voice_assist_preprocess_html(&$variables) {
+function voice_assist_preprocess_html(&$variables)
+{
   $route_name = \Drupal::routeMatch()->getRouteName();
   if (str_contains($route_name, 'node.add')) {
+    $content_type_param = \Drupal::routeMatch()->getParameter('node_type');
+    $content_type = $content_type_param ? $content_type_param->id() : NULL;
+
+    if ($content_type) {
+      $variables['#attached']['drupalSettings']['voice_assist']['contentType'] = $content_type;
+    }
     $variables['#attached']['library'][] = 'voice_assist/voice_assist';
   }
 }
